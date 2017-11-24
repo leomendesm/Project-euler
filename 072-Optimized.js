@@ -17,9 +17,9 @@ for (var i = 0; i <= 1000000; i++) {
    help.push(i);
 }
 
-for (var i = 2; i < 1000000; i++) {
+for (var i = 2; i < help.length; i++) {
   if (help[i] == i) {
-    for (var j = i; j <= 1000000; j += i) {
+    for (var j = i; j <= help.length; j += i) {
       help[j] = help[j] / i * (i - 1);
     }
 	}

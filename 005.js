@@ -1,3 +1,4 @@
+var antes = Date.now();
 var count = 0
 var number = 1
 while(count  < 20){
@@ -14,3 +15,5 @@ while(count  < 20){
 		break;
 	}
 }
+var duracao = Date.now() - antes;
+console.log("levou " + duracao + "ms")

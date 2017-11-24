@@ -1,3 +1,4 @@
+var antes = Date.now();
 function iterate(n){
 	if(n % 2 == 0 )
 		return n/2;
@@ -16,3 +17,5 @@ for (var i = 0; i < 1000000; i++) {
 		result = i;
 }
 console.log(result);
+var duracao = Date.now() - antes;
+console.log("levou " + duracao + "ms")
